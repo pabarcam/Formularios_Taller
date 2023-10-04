@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Vehículos</title>
+</head>
+<body>
+    <!--Estrucutura del formulario-->
+    <form action="registrar_vehiculos.php" method="post">
+        <!--Título del Registro-->
+        <h1>Formulario de Recepción de Vehículos</h1>
+            <!-- Datos del Cliente -->
+            <h2>Datos del Cliente</h2>
+            <p><label for="nombre">Nombre: <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" size="12"></label>&nbsp;
+            <label for="apellido">Apellido: <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" size="12" required></label>
+            </p>
+            <p><label for="identificacion">Identificación: <input type="text" id="identificacion" name="identificacion" placeholder="Ingrese su rut sin puntos ni guión" size="25" required></label></p>
+            <p><label for="direccion">Dirección: <input type="text" id="direccion" name="direccion" placeholder="Ingrese su Dirección" required></label></p>
+            <p><label for="telefono">Teléfono: <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su Número de Teléfono" size="23" required></label></p>
+            <p><label for="correo">Correo: <input type="email" id="correo" name="correo" placeholder="Ingrese su Correo" size="12" required></label></p>
+            <!-- Datos del Vehículo -->
+            <h2>Datos del Vehículo</h2>
+            <p><label for="marca">Marca: <input type="text" id="marca" name="marca" placeholder="Ingrese la Marca de su Vehículo" size="25" required></label></p>       
+            <p><label for="modelo">Modelo: <input type="text" id="modelo" name="modelo" placeholder="Ingrese el Modelo de su Vehículo" size="25"required></label></p>
+            <p><label for="ano">Año: <input type="month" id="ano" name="ano" placeholder="Ingrese el Año de su Vehículo" size="22" required></label></p>
+            <p>
+            <label for="direccion_tipo">Tipo de dirección: 
+                <select id="direccion_tipo" name="direccion_tipo" required>
+                    <option value="manual">Manual</option>
+                    <option value="automatico">Automático</option>
+                </select>
+            </label>
+            </p>
+            <p><label for="falla">Falla del Vehículo: </label></p>
+                <textarea id="falla" name="falla" rows="4" placeholder="Describa la Falla del Vehículo" required></textarea>
+            <p>
+            <label for="tecnico">Técnico Asignado:  
+            <select id="tecnico" name="tecnico" required>
+                <option value="Manuel Peréz">Manuel</option>
+                <option value="Miguel González">Miguel</option>
+            </select>
+            </label>
+            </p>
+            <!--Botón-->
+            <input type="submit" value="Enviar">
+    </form>   
+</body>
+</html>

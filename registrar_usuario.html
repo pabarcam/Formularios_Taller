@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Usuarios</title>
+</head>
+<body>
+    <!--Título del Registro-->
+    <h1>Formulario de Registro Usuarios</h1>
+    <!--Estrucutura del formulario-->
+    <form action="registrar_usuario.php" method="post">
+        <!--Datos del Usuario-->
+        <p><label for="usuario">Usuario: <input type="username" id="usuario" name="usuario" size="45" maxlength="8" placeholder="Debe estar en mayúscula con un máxmio de 8 caracteres" pattern="[A-Z]+" required></label></p>
+        <p><label for="contraseña">Contraseña: <input type="password" id="contraseña" name="contraseña" size="44" placeholder="Debe estar en minúscula con un mínimo de 6 caracteres" minlength="6" pattern="[a-z]+" required></label></p>
+        <!--Botón-->
+        <input type="submit" id="submit" name="submit" value="Registrar">
+    </form>
+</body>
+</html>
